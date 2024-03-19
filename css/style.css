@@ -1,0 +1,72 @@
+
+body { /*image, text styling*/
+    background-image: url("../img/coffee2.png");
+    background-size: cover;
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+i {
+    color: #924a07;
+}
+
+input, select { /*coloring for the input and select */
+    background-color: #924a07;
+    color: antiquewhite;
+    width: 100%;
+    border-radius: 50px;
+    height: 2.5em;
+}
+
+aside h2 { /*styling for the h2: Yet Another Coffee Shop*/
+    display: inline-block;
+    font-size: 3em;
+}
+
+article > div { /*lets all coffees be side by side in col*/
+    display: inline-block;
+}
+
+article p { /*styling for the 'light, medium, dark' next to the coffee names*/
+    display: inline-block;
+    color: slategray;
+}
+
+article h2 { /*pushes the 'light, medium, dark' next to the coffee names*/
+    display: inline-block;
+}
+
+::placeholder { /*styles the text in the 'search, select, coffee name, select roast*/
+    color: antiquewhite;
+}
+
+.coffeeHeader { /*styles the header: YACKS*/
+    font-weight: bold;
+    font-size: 8em;
+    text-align: center;
+    padding: 0;
+}
+
+.addBtn { /*styles the 'add coffee' button */
+    width: 75%;
+    margin-left: 12%;
+    background-color: sandybrown;
+    height: 2.5em;
+}
+
+.modal-color { /*styles the modal popup*/
+    background-color: rgb(246, 242, 226);
+}
+.modal-dialog *{
+    display: inline-block;
+    text-align: center;
+}
+
+.card {
+    width: auto;
+    margin: 0 0.25em;
+    background-color: #ffffff60;
+}
+
+.card:hover {
+    background-color: #8b4513;
+}

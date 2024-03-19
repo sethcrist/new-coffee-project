@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Yet Another Coffee Shop!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="container">
+<header>
+    <h1 class="coffeeHeader pe-5"><i class="fa-solid fa-mug-hot"></i>YACS!</h1>
+    <h2 class="text-center">Yet Another Coffee Shop</h2>
+</header>
+<hr class="border border-3 border-danger">
+<main class="row">
+    <article class="col-6" id="coffees">
+
+
+    </article>
+    <aside class="col-6">
+        <form id="coffee-search-form">
+            <div class="mb-3">
+                <label for="coffee-search" class="form-label mb-3 fs-4">Search Coffees</label>
+                <input type="text" id="coffee-search" placeholder="Coffee Name">
+            </div>
+            <div class="mb-3">
+                <label for="roast-selection" class="form-label mb-3 fs-4">Select Roast</label>
+                <select id="roast-selection">
+                    <option value="all">All</option>
+                    <option value="light">Light</option>
+                    <option value="medium">Medium</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+        </form>
+        <div class="col-12 text-center m-0 p-0">
+            <h2 class="mt-2">Create Coffee</h2>
+        </div>
+        <hr class="border border-3 border-danger mt-0">
+        <form id="add-coffee">
+            <label for="addType" class="mb-3 fs-4">Coffee Name</label>
+            <input type="text" name="addType" id="addType" placeholder="Create Coffee">
+            <div class="mb-3">
+                <label for="roast-add" class="form-label mb-3 mt-3 fs-4">Select Roast</label>
+                <select id="roast-add">
+                    <option value="light">Light</option>
+                    <option value="medium">Medium</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+            <button type="submit" id="addCoffee" class="addBtn rounded-pill">add coffee</button>
+        </form>
+    </aside>
+</main>
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content modal-color">
+            <div class="modal-header">
+                <h1 class="modal-title" id="modalHead"></h1>
+            </div>
+            <div class="modal-body" id="modalBody">
+            </div>
+            <br>
+            <button type="button" id="modalClose" class="btn btn-outline-warning fs-4" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/3f73c8b14d.js" crossorigin="anonymous"></script>
+</body>
+</html>
